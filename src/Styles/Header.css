@@ -1,0 +1,42 @@
+/* styles/header.css */
+.header-container {
+  background: #ffffff;
+  padding: 15px;
+}
+
+.header-title {
+  color: #4299E1;
+  padding: 0 25px;
+}
+
+.line-list{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.line-list-item{
+  color: #AAAAAA;
+  position: relative;
+  padding: 0 25px;
+  font-size: 13px;
+}
+
+.line-list-item:nth-child(1) {
+  color: #4299E1;
+}
+
+.line-list-item:not(:last-child)::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35px;
+  height: 2px;
+  background-color: #AAAAAA;
+}
+
+
+
